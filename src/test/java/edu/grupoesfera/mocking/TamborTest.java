@@ -8,7 +8,7 @@ public class TamborTest {
 	@Test
 	public void obtenerValorSinGirarElTamborDeveriaDevolverCero(){
 		Tambor tambor = new Tambor();
-		Assert.assertEquals(0, tambor.obtenerPosicion());
+		Assert.assertEquals(new Integer(0), tambor.obtenerPosicion());
 	}
 	
 	@Test

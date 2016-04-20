@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class Tambor {
 	
-	private int valor = 0;
+	private Integer valor = 0;
 	
-	public int obtenerPosicion() {
+	public Integer obtenerPosicion() {
 		return valor;
 	}
 	
