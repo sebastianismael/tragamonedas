@@ -1,6 +1,7 @@
 package edu.grupoesfera.mocking;
 
-import org.junit.Assert;
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.Test;
 
 public class TamborTest {
@@ -8,13 +9,13 @@ public class TamborTest {
 	@Test
 	public void obtenerValorSinGirarElTamborDeveriaDevolverCero(){
 		Tambor tambor = new Tambor();
-		Assert.assertEquals(new Integer(0), tambor.obtenerPosicion());
+		assertThat(tambor.obtenerPosicion()).isEqualTo(0);
 	}
 	
 	@Test
 	public void obtenerValorDespuesDeGirarElTamborDeveriaDevolverEntreUnoYOcho(){
 		Tambor tambor = new Tambor();
 		tambor.girar();
-		Assert.assertTrue(tambor.obtenerPosicion() >= 1 && tambor.obtenerPosicion() <= 8);
+		assertThat(tambor.obtenerPosicion()).isBetween(1, 8);
 	}
 }

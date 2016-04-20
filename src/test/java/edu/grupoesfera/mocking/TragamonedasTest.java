@@ -1,14 +1,13 @@
 package edu.grupoesfera.mocking;
 
-
-import org.junit.Assert;
-import org.junit.Test;
-
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import org.junit.Test;
 
 public class TragamonedasTest {
 
@@ -30,7 +29,7 @@ public class TragamonedasTest {
 		
 		Tragamonedas maquinita = new Tragamonedas(factory);
 		maquinita.activar();
-		Assert.assertTrue(maquinita.entregaPremio());
+		assertThat(maquinita.entregaPremio()).isTrue();
 	}
 	
 	@Test
@@ -51,7 +50,7 @@ public class TragamonedasTest {
 		
 		Tragamonedas maquinita = new Tragamonedas(factory);
 		maquinita.activar();
-		Assert.assertFalse(maquinita.entregaPremio());
+		assertThat(maquinita.entregaPremio()).isFalse();
 	}
 	
 	@Test
