@@ -1,4 +1,4 @@
 Un Tragamonedas está compuesto por 3 Tambores. Cuando el Tragamonedas se activa, giran los
 3 Tambores. Cada Tambor se detiene en una posición comprendida entre 1 y 8. El
 Tragamonedas entrega un premio cada vez que, luego de ser activado los 3 Tambores se detienen
-en la misma posición.
+en la misma posición.!
