@@ -72,7 +72,7 @@ public class TragamonedasTest {
 		Tragamonedas maquinita = new Tragamonedas(factory);
 		maquinita.activar();
 		
-		verify(tambor1Mock, times(1)).girar();
+        verify(tambor1Mock, times(1)).girar();
 		verify(tambor2Mock, times(1)).girar();
 		verify(tambor3Mock, times(1)).girar();
 	}
