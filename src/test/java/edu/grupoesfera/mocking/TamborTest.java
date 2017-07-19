@@ -9,7 +9,7 @@ public class TamborTest {
 	@Test
 	public void obtenerValorSinGirarElTamborDeveriaDevolverCero(){
 		Tambor tambor = new Tambor();
-		assertThat(tambor.obtenerPosicion()).isEqualTo(0);
+		assertThat(tambor.obtenerPosicion()).isEqualTo(10);
 	}
 	
 	@Test
